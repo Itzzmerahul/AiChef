@@ -1,0 +1,163 @@
+body,html{
+  margin: 0;
+  
+  font-family: 'EduEdu NSW ACT Cursive', cursive;
+  background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+
+}
+
+
+.header{
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #D0E7FF, #f3f9ff);
+  align-items: center;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+}
+
+.title{
+  font-size: 2.5rem;
+  font-family: 'EduEdu NSW ACT Cursive', cursive;
+}
+
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-left: 80px;
+  height: 80px;
+  gap: 10px;
+}
+
+
+
+.form > input{
+  border: 1px solid rgb(12, 11, 11);
+  width: 400px;
+  border-radius: 3px;
+  height: 20px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  padding: 6px 10px;
+  min-width: 150px;
+  max-width: 1000px;
+}
+
+.form>button{
+  padding: 6px 10px;
+  font-family: cursive;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: 150px;
+  color: aliceblue;
+  
+}
+
+.form > button::before{
+  content: "+";
+  margin-right:6px;
+}
+
+.recipe1{
+     font-size: large;
+     margin-left: 433px;
+     padding-bottom: 30px;
+}
+
+.suggested-recipe-container {
+    color: #475467;
+    line-height: 28px;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.chef-container {
+  background: rgba(255, 255, 255, 0.1); /* transparent white */
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); /* for Safari */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 24px;
+  margin: 30px auto;
+  max-width: 1000px;
+  
+}
+
+@media (max-width: 768px) {
+
+  .header {
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+    
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+    height: auto;
+    gap: 12px;
+  }
+
+  .form > input {
+    width: 94%;
+    max-width: none;
+    margin-top: 120px;
+    
+  }
+
+  .form > button {
+    width: 100%;
+  }
+
+  .recipe1 {
+    margin-left: 0;
+    padding: 10px 20px;
+  }
+
+  .chef-container {
+    margin: 20px 16px;
+    padding: 16px;
+  }
+  .get-recipe-btn {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #4fc3f7, #81d4fa);
+  border: none;
+  border-radius: 8px;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Segoe UI', sans-serif;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.get-recipe-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.get-recipe-btn:active {
+  transform: scale(0.98);
+}
+
+  .suggested-recipe-container {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
