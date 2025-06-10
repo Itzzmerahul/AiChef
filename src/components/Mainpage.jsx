@@ -26,7 +26,14 @@ export default function Mainpage(){
         e.preventDefault()
         const formData = new FormData(e.target)
         const newIngredient=formData.get("ingredient")
+
+        if (!newIngredient) {
+        alert("Please enter an ingredient before pressing 'Add ingredient'.");
+        return;
+    }
+
         setIngredient(prevIngredient=>[...prevIngredient,newIngredient])
+         e.target.reset();
         
         
     }
@@ -45,6 +52,7 @@ export default function Mainpage(){
                 placeholder="ex origano"
                 aria-label="Add Ingredient"
                 name="ingredient"
+                required
                 >
                 </input>
                 <button>Add ingredient</button>
